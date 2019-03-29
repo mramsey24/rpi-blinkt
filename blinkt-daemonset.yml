@@ -13,6 +13,7 @@ spec:
     spec:
       containers:
           - name: blinkt
-            image: blinkt          
+            image: blinkt
+            imagePullPolicy: Never          
             securityContext:
               privileged: true          
