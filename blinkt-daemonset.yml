@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: DaemonSet
+metadata:
+  name: blinkt
+  labels:
+    app: blinkt
+    version: v1
+spec:
+  template:
+    metadata:
+      labels:
+        name: blinkt
+    spec:
+      containers:
+          securityContext:
+            privileged: true
+          image: alexellis2/progress-blinkt:red
+          name: blinkt
