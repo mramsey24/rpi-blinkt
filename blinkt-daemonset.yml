@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
           - name: blinkt
-            image: alexellis2/progress-blinkt:red          
+            image: blinkt          
             securityContext:
               privileged: true          
